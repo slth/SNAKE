@@ -44,6 +44,28 @@ namespace snake
 			pList.Add(p1);
 			pList.Add(p2);
 			
+			//list for hash and stars (symbols)
+			List<char> charList = new List<char>();
+			charList.Add('*');
+			charList.Add('#');
+			charList.Add('$');
+			charList.Add('@');			
+			charList.Add('&');
+			
+			//four point's
+			//add cordinates
+			//add to list
+			Point p3 = new Point(5,5,'@');
+			Point p4 = new Point(6,5,'@');			
+			Point p5 = new Point(7,5,'@');
+			Point p6 = new Point(8,5,'@');
+			
+			List<Point> pList2 = new List<Point>();
+			pList2.Add(p3);
+			pList2.Add(p4);
+			pList2.Add(p5);
+			pList2.Add(p6);	
+			
 			Console.ReadLine();
 		}
 	}
