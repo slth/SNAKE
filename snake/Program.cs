@@ -27,6 +27,8 @@ namespace snake
 			HorizontalLine line = new HorizontalLine(5,10,8, '*');
 			line.Drow();
 			
+			VerticalLine vline = new VerticalLine(5,10,3,'$');
+			vline.Drow();		
 
 			
 			Console.ReadLine();
