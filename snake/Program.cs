@@ -24,47 +24,10 @@ namespace snake
 			Point p2 = new Point(5, 3, '#');
 			p2.Draw();
 			
-			List<int> numList = new List<int>();
-			numList.Add(0);
-			numList.Add(1);
-			numList.Add(2);
+			HorizontalLine line = new HorizontalLine(5,10,8, '*');
+			line.Drow();
 			
-			int x = numList[0];			
-			int y = numList[1];			
-			int z = numList[2];
-			
-			foreach(int i in numList)
-			{
-				Console.WriteLine(i);
-			}	
-			
-			numList.RemoveAt(0);
-			
-			List<Point> pList = new List<Point>();
-			pList.Add(p1);
-			pList.Add(p2);
-			
-			//list for hash and stars (symbols)
-			List<char> charList = new List<char>();
-			charList.Add('*');
-			charList.Add('#');
-			charList.Add('$');
-			charList.Add('@');			
-			charList.Add('&');
-			
-			//four point's
-			//add cordinates
-			//add to list
-			Point p3 = new Point(5,5,'@');
-			Point p4 = new Point(6,5,'@');			
-			Point p5 = new Point(7,5,'@');
-			Point p6 = new Point(8,5,'@');
-			
-			List<Point> pList2 = new List<Point>();
-			pList2.Add(p3);
-			pList2.Add(p4);
-			pList2.Add(p5);
-			pList2.Add(p6);	
+
 			
 			Console.ReadLine();
 		}
